@@ -364,7 +364,7 @@ async function validaGoogle() {
           facebookAbout = getDataBase[0].descricao
         }
 
-        await sequelize.query("UPDATE catalogo SET ddd_telefone='" + dddTelefone + "', telefone='" + telGoogle + "', ddd_telefone2='" + dddTelefone2 + "', telefone2='" + telFacebook + "', email='" + getFacebookEmail + "', pagina_web='" + results.site + "', instagram='" + instagramLink + "', facebook='" + facebookLink + "', linkedin='" + linkedinLink + "', descricao='" + facebookAbout + "', emailAtualizado='" + emailAtualizado + "', telefoneAtualizado='" + telefoneAtualizado + "', atualizado=1, google=" + verifyGoogle + "  WHERE id_catalogo = " + getDataBase[0].id_catalogo + "")
+        await sequelize.query("UPDATE catalogo SET ddd_telefone='" + dddTelefone + "', telefone='" + telGoogle + "', ddd_telefone2='" + dddTelefone2 + "', telefone2='" + telFacebook + "', email='" + getFacebookEmail + "', pagina_web='" + results.site + "', instagram='" + instagramLink + "', facebook='" + facebookLink + "', linkedin='" + linkedinLink + "', descricao='" + facebookAbout + "', emailAtualizado='" + emailAtualizado + "', telefoneAtualizado='" + telefoneAtualizado + "', atualizado=2, google=" + verifyGoogle + "  WHERE id_catalogo = " + getDataBase[0].id_catalogo + "")
         console.log('  ✔  Atualizado ');
 
       }
